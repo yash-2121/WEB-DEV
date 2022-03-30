@@ -1,0 +1,206 @@
+* {
+    margin: 0px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.social {
+    padding-left: 10px;
+}
+
+.landingPage {
+    font-family: 'Merriweather', serif;
+    background-image: url('./Dolce-Cheyenne-Gallery-01-5b8dbebb6b703.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.landingPage .nav {
+    text-shadow: 2px 2px 8px #1d1919;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 30px;
+    align-items: center;
+    margin-top: 5px;
+    border-bottom: 2px solid white;
+}
+
+.landingPage .nav .logo {
+    font-size: 1vw;
+    border: 2px solid white;
+    width: 10vw;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.landingPage .nav nav ul {
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.landingPage .nav nav ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.landingPage .nav nav ul li a {
+    text-decoration: none;
+    color: azure;
+    font-size: 1.2vw;
+}
+
+.landingPage .nav nav ul li:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.landingPage .nav nav ul li a:active {
+    border: 1px solid white;
+}
+
+.landingPage .text {
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 8px #180916;
+    position: absolute;
+    width: 50vw;
+    top: 35vh;
+    left: 28vw;
+    text-align: center;
+}
+
+.landingPage .text h1 {
+    font-size: 4vw;
+}
+
+.landingPage .form {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+    width: 85vw;
+    position: absolute;
+    top: 75vh;
+    left: 10vw;
+}
+
+::placeholder {
+    color: rgb(247, 246, 246);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+#textbox-n {
+    font-family: 'Merriweather', serif;
+    font-size: large;
+}
+
+.landingPage .form form input {
+    width: 50vw;
+    font-family: 'Merriweather', serif;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    height: 5vw;
+    width: 50vh;
+}
+
+.landingPage .form form select {
+    width: 10vw;
+    height: 2vw;
+    border-radius: 5px;
+    border: 2px solid rgb(5, 0, 0);
+}
+
+.landingPage .form form #search {
+    border: 2px solid rgb(255, 253, 253);
+    width: 26vh;
+    padding: 10px;
+    height: 4vw;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#bars {
+    display: none;
+}
+
+
+/* Mobile view */
+
+@media only screen and (max-width:900px) {
+    #bar {
+        display: block;
+    }
+    .nav {
+        padding: 0px;
+    }
+    .nav nav {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(94, 69, 141);
+        border-bottom-left-radius: 100px;
+        transition: 1s ease;
+        margin-top: -900px;
+    }
+    .mobile-menu {
+        margin-top: 0px
+    }
+    .navlist li {
+        margin-bottom: 30px;
+    }
+    main {
+        background-color: aliceblue;
+    }
+}
+
+
+/* Services page */
+
+.servicePage {
+    height: 40vh;
+}
+
+.servicePage button {
+    position: relative;
+    background-color: red;
+    border-radius: 10px;
+    height: 10vh;
+    width: 20vw;
+    font-size: larger;
+    font-weight: bolder;
+    position: absolute;
+    top: 16vw;
+    left: 40vw;
+}
+
+.servicelist {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 80vw;
+    justify-content: space-between;
+    align-items: center;
+}
